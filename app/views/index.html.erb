@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Links</title>
+</head>
+<body>
+  <div>
+    <% @items.each do |item| %>
+      <div>
+        <a href="<%= item.link_url %>" target="_blank">
+          <%= item.link_description %>
+        </a>
+      </div>
+    <% end %>
+  </div>
+</body>
+</html>
